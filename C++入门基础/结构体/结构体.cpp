@@ -29,7 +29,21 @@ int main() {
 	s3.score = 70;
 	cout << "姓名：" << s3.name << "年龄:" << s3.age << "分数:" << s3.score << endl;
 //结构体数组：结构体放入数组中，方便维护
-
+//struct 结构体名 数组名[元素个数] = { {}, {}, ...}
+	struct Teacher teaArray[3] = {
+		{"张一", 18, 100},
+		{"张二", 28, 99},
+		{"张四", 38, 66}
+	};
+	//给结构体数组中的元素赋值
+	teaArray[2].age = 40;
+	//遍历结构体数组
+	for (int i = 0; i < 3; i++) {
+		cout << "姓名：" << teaArray[i].name 
+			 << "年龄：" << teaArray[i].age 
+			 << "分数：" << teaArray[i].score << endl;
+	}
+	
 	system("pause");
 	return 0;
 }
