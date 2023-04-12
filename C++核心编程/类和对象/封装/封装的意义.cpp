@@ -10,10 +10,11 @@ class Circle {
 	//公共权限
 public:
 	
-	//属性
+	//类中的属性和行为同一称为成员
+	//属性（也称 成员属性，变量属性）
 	int m_r;
 
-	//行为
+	//行为（也称 成员函数， 成员方法）
 	//获取圆的周长
 	double calculateZC() {
 		return 2 * PI * m_r;
