@@ -109,3 +109,14 @@ class B {
 B类中有对象a作为成员，a为对象成员  
 那么当创建B的对象时，A与B的构造和析构先后顺序为：先构造A的对象，后构造B的对象；析构顺序相反  
   
+### 静态成员
+  
+静态成员就是在成员变量和成员函数前加上关键字static，称为静态成员  
+静态成员分为：  
+&ensp;&ensp;* 静态成员变量  
+&ensp;&ensp;&ensp;&ensp;所有对象共享同一份数据  
+&ensp;&ensp;&ensp;&ensp;在编译阶段分配内存  
+&ensp;&ensp;&ensp;&ensp;类内声明，类外初始化  
+&ensp;&ensp;* 静态成员函数  
+&ensp;&ensp;&ensp;&ensp;所有对象共享一个函数  
+&ensp;&ensp;&ensp;&ensp;静态成员函数只能访问静态成员变量  
