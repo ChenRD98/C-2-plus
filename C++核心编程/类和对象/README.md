@@ -241,3 +241,9 @@ class 子类 : 继承方式 父类
 一类是从基类继承过来的，一类是自己增加的成员  
 从基类继承过来的表现其共性，而新增的成员体现了其个性  
   
+### 继承方式
+继承方式一共有三种：  
+ * 公共继承(除了private其他原封不动照搬)  
+ * 保护继承(除了private其他放在protected里)  
+ * 私有继承(除了private其他放在private里)  
+![](https://github.com/ChenRD98/C-plusplus/blob/master/C%2B%2B%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/%E7%BB%A7%E6%89%BF/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F.jpg)
