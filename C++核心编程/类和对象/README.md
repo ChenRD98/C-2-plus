@@ -247,4 +247,10 @@ class 子类 : 继承方式 父类
  * 保护继承(除了private其他放在protected里)  
  * 私有继承(除了private其他放在private里)  
 ![](https://github.com/ChenRD98/C-plusplus/blob/master/C%2B%2B%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/%E7%BB%A7%E6%89%BF/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F.jpg)  
-
+  
+### 继承中的对象模型
+问题：从父类继承过来的成员，哪些属于子类对象中？  
+父类中所有非静态成员属性都会被子类继承下去  
+  
+使用vs的开发人员命令提示工具可查看类的分布图（对象模型）  
+命令为：cl /d1 reportSingleClassLayout类名 "类所在文件名.后缀"  
