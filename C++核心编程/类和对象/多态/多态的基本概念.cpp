@@ -48,8 +48,20 @@ void test01() {
 	dospeak(dog);
 }
 
+//多态前Animal内存空间占1，多态后占4字节，指针vfptr所占用，指向虚函数表vftable
+//表内记录虚函数的地址&Animal::speak
+//Cat内部结构继承过来一个指针vfptr，指向子类的虚函数表
+//只继承的话表内记录的还是&Animal::speak
+//但是发生重写后，表内会替换成子类的虚函数地址&Cat::speak
+//当父类的指针或引用指向子类对象时候，发生多态
+
+void test02() {
+	cout << "sizeof Animal = " << sizeof(Animal) << endl;
+}
+
 int main() {
-	test01();
+	//test01();
+	test02();
 	system("pause");
 	return 0;
 }
