@@ -96,3 +96,8 @@ C++中对文件操作需要包含头文件<fstream>
 函数原型：ostream& write(const char* buffer, int len);  
 参数解释：字符指针buffer指向内存中一段存储空间，len是读写的字节数  
   
+### 读文件
+二进制方式读文件主要利用流对象调用成员函数read  
+函数原型：ostream& read(char* buffer, int len);  
+参数解释：字符指针buffer指向内存中一段存储空间，len是读写的字节数  
+  
