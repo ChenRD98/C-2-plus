@@ -62,3 +62,28 @@ C++中对文件操作需要包含头文件<fstream>
 **注意：**文件打开方式可以配合使用，利用|操作符  
 **例如：**用二进制方式写文件 ios::binary | ios::out  
   
+### 读文件
+读文件与写文件步骤相似，但是读取方式相对比较多  
+读文件步骤如下：  
+ 1、包含头文件  
+ #include<fstream>  
+ 2、创建流对象  
+ ifstream ifs;  
+ 3、打开文件并判断文件是否打开成功  
+ ifs.open("文件路径", 打开方式);  
+ ifs.is_open()返回bool类型结合if语句判断  
+ &ensp;&ensp;if (!ifs.is_open()) {  
+ &ensp;&ensp;&ensp;&ensp;cout << "文件打开失败" << endl;  
+ &ensp;&ensp;&ensp;&ensp;return;  
+ &ensp;&ensp;}  
+ 4、读数据  
+ 四种方式读取  
+ * 创建空字符数组，将ifs中内容输出到空数组中，配合while循环打印读出效果  
+ * 创建空字符数组，利用ifs成员函数getline(char*空字符数组名即为首地址, 计数大小sizeof)，配合while实现读取  
+ * 创建字符串变量，利用全局函数getline(输入流对象, 准备好的字符串变量)，该全局函数需要包含string头文件，配合while实现读取  
+ * 创建空字符变量，利用ifs成员函数get，ifs.get()一次只能读一个字符，放入c中，while循环判断是否读到文件尾EOF(不推荐)  
+ while ((c = ifs.get()) != EOF) {cout << c;}  
+  
+ 5、关闭文件  
+ ifs.close();  
+  
