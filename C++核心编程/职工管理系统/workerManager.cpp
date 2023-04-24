@@ -3,10 +3,42 @@
 
 
 workerManager::workerManager() {
-	//初始化人数
-	this->m_EmpNum = 0;
-	//初始化数组指针
-	this->m_EmpArray = NULL;
+//1、文件不存在
+	ifstream ifs(FILENAME, ios::in);
+	//文件不存在情况
+	if (!ifs.is_open()) {
+		/*cout << "文件不存在" << endl;*///测试输出
+		this->m_EmpNum = 0;//初始化人数
+		this->m_FileIsEmpty = true;//初始化文件为空标志
+		this->m_EmpArray = NULL;//初始化数组
+		ifs.close();
+		return;
+	}
+//2、文件存在，并且没有记录
+	char ch;
+	ifs >> ch;//读一个字符判断是否是尾，eof为真就代表到尾了，只有一个文件结尾标
+	if (ifs.eof()) {
+		/*cout << "文件为空！" << endl;*/
+		this->m_EmpNum = 0;
+		this->m_FileIsEmpty = true;
+		this->m_EmpArray = NULL;
+		ifs.close();
+		return;
+	}
+//3、文件存在，且记录是数据
+	int num = this->get_EmpNum();
+	/*cout << "职工的人数为：" << num << endl;*/
+	this->m_EmpNum = num;
+	//根据职工数创建数组，开辟空间
+	this->m_EmpArray = new Worker*[this->m_EmpNum];
+	//初始化职工，将文件中的数据存到数组中
+	this->init_Emp();
+	//测试代码
+	/*for (int i = 0; i < m_EmpNum; i++) {
+		cout << "职工号：" << this->m_EmpArray[i]->m_Id
+			<< "职工姓名：" << this->m_EmpArray[i]->m_Name
+			<< "部门编号：" << this->m_EmpArray[i]->m_DeptID << endl;
+	}*/
 }
 void workerManager::Show_Menu() {
 	cout << "******************************" << endl;
@@ -86,6 +118,8 @@ void workerManager::Add_Emp() {
 		this->m_EmpArray = newSpace;
 		//更新新的个数
 		this->m_EmpNum = newSize;
+		//更新职工不为空标志
+		this->m_FileIsEmpty = false;
 		//成功添加后 保存到文件中
 		this->save();
 		//提示信息
@@ -111,4 +145,42 @@ workerManager::~workerManager() {
 		delete[] this->m_EmpArray;
 		this->m_EmpArray = NULL;
 	}
+}
+int workerManager::get_EmpNum() {
+	ifstream ifs(FILENAME, ios::in);
+	int id;
+	string name;
+	int dId;
+	int num = 0;
+	//录入时用空格分隔，ifs遇到空格换行就停止读，下面while每次读一行
+	while (ifs >> id && ifs >> name && ifs >> dId) {
+		//记录人数
+		num++;
+	}
+	return num;
+}
+void workerManager::init_Emp() {
+	ifstream ifs(FILENAME, ios::in);
+	int id;
+	string name;
+	int dId;
+	int index = 0;
+	while (ifs >> id && ifs >> name && ifs >> dId) {
+		Worker* worker = NULL;
+		//根据不同的部门Id创建不同对象
+		if (dId == 1) {
+			worker = new Employee(id, name, dId);
+		}
+		else if (dId == 2) {
+			worker = new Manager(id, name, dId);
+		}
+		else {
+			worker = new Boss(id, name, dId);
+		}
+		//存放在数组中
+		this->m_EmpArray[index] = worker;
+		index++;
+	}
+	//关闭文件
+	ifs.close();
 }

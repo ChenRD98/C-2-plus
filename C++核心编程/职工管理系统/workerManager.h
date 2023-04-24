@@ -20,8 +20,12 @@ public:
 	void Add_Emp();
 	//文件操作
 	void save();
-
-
+	//标志文件是否为空
+	bool m_FileIsEmpty;
+	//统计人数
+	int get_EmpNum();
+	//初始化员工
+	void init_Emp();
 
 
 
