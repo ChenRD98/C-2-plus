@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include "workerManager.h"
 
-
 workerManager::workerManager() {
 //1、文件不存在
 	ifstream ifs(FILENAME, ios::in);
@@ -206,4 +205,32 @@ int workerManager::IsExist(int id) {
 		}
 	}
 	return index;
+}
+void workerManager::Del_Emp() {
+	if (this->m_FileIsEmpty) {
+		cout << "文件不存在或记录为空！" << endl;
+	}
+	else {
+		//按照职工编号删除
+		cout << "请输入想要删除职工编号：" << endl;
+		int id = 0;
+		cin >> id;
+		int index = this->IsExist(id);
+		//说明职工存在，并且要删除掉index位置上的职工
+		if (index != -1) {
+			//数据迁移
+			for (int i = index; i < this->m_EmpNum - 1; i++) {
+				this->m_EmpArray[i] = this->m_EmpArray[i + 1];
+			}
+			this->m_EmpNum--;//更新数组中记录人员个数
+			//同步更新到文件中
+			this->save();
+			cout << "删除成功" << endl;
+		}
+		else {
+			cout << "删除失败，未找到该职工" << endl;
+		}
+	}
+	system("pause");
+	system("cls");
 }
