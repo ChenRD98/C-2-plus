@@ -197,3 +197,13 @@ void workerManager::Show_Emp() {
 	system("pause");
 	system("cls");
 }
+int workerManager::IsExist(int id) {
+	int index = -1;
+	for (int i = 0; i < this->m_EmpNum; i++) {
+		if (this->m_EmpArray[i]->m_Id == id) {
+			index = i;
+			break;
+		}
+	}
+	return index;
+}
