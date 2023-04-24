@@ -26,6 +26,8 @@ public:
 	int get_EmpNum();
 	//初始化员工
 	void init_Emp();
+	//显示职工
+	void Show_Emp();
 
 
 
