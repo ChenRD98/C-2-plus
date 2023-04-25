@@ -60,7 +60,7 @@ int main() {
 			break;
 		case 7:
 			//清空
-
+			wm.Clean_File();
 			break;
 		default:
 			system("cls");

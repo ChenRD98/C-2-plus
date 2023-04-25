@@ -139,12 +139,6 @@ void workerManager::save() {
 	}
 	ofs.close();
 }
-workerManager::~workerManager() {
-	if (this->m_EmpArray != NULL) {
-		delete[] this->m_EmpArray;
-		this->m_EmpArray = NULL;
-	}
-}
 int workerManager::get_EmpNum() {
 	ifstream ifs(FILENAME, ios::in);
 	int id;
@@ -377,5 +371,43 @@ void workerManager::Sort_Emp() {
 		cout << "排序成功，排序后结果为：" << endl;
 		this->save();
 		this->Show_Emp();//定义里有清屏，所以不用再清屏
+	}
+}
+void workerManager::Clean_File() {
+	cout << "确认清空？" << endl;
+	cout << "1、确认" << endl;
+	cout << "2、返回" << endl;
+	int select = 0;
+	cin >> select;
+	if (select == 1) {
+		//打开模式 ios::trunc 如果存在删除文件并重新创建
+		ofstream ofs(FILENAME, ios::trunc);
+		ofs.close();
+
+		if (this->m_EmpArray != NULL) {
+			for (int i = 0; i < this->m_EmpNum; i++) {
+				if (this->m_EmpArray[i] != NULL) {
+					delete this->m_EmpArray[i];//维护堆区的每一个对象释放
+				}
+			}
+			this->m_EmpNum = 0;
+			delete[] this->m_EmpArray;//释放堆区维护的数组
+			this->m_EmpArray = NULL;
+			this->m_FileIsEmpty = true;
+		}
+		cout << "清空成功！" << endl;
+	}
+	system("pause");
+	system("cls");
+}
+workerManager::~workerManager() {
+	if (this->m_EmpArray != NULL) {
+		for (int i = 0; i < this->m_EmpNum; i++) {
+			if (this->m_EmpArray[i] != NULL) {
+				delete this->m_EmpArray[i];//维护堆区的每一个对象释放
+			}
+		}
+		delete[] this->m_EmpArray;
+		this->m_EmpArray = NULL;
 	}
 }
