@@ -36,7 +36,8 @@ public:
 	void Mod_Emp();
 	//查找职工
 	void Find_Emp();
-
+	//排序职工
+	void Sort_Emp();
 
 
 	//记录文件中的人数个数

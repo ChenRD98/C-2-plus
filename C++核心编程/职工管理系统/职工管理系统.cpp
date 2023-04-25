@@ -56,6 +56,7 @@ int main() {
 			break;
 		case 6:
 			//排序职工
+			wm.Sort_Emp();
 			break;
 		case 7:
 			//清空

@@ -339,3 +339,43 @@ void workerManager::Find_Emp() {
 	system("pause");
 	system("cls");
 }
+void workerManager::Sort_Emp() {
+	if (this->m_FileIsEmpty) {
+		cout << "文件不存在或记录为空！" << endl;
+		system("pause");
+		system("cls");
+	}
+	else {
+		cout << "请选择排序方式：" << endl;
+		cout << "1、按职工号进行升序" << endl;
+		cout << "2、按职工号进行降序" << endl;
+		
+		int select = 0;
+		cin >> select;
+		//选择排序：用位置去找数
+		for (int i = 0; i < m_EmpNum; i++) {
+			int minOrMax = i;//初始化认定为最小的数
+			for (int j = i + 1; j < m_EmpNum; j++) {
+				if (select == 1) {
+					if (m_EmpArray[minOrMax]->m_Id > m_EmpArray[j]->m_Id) {
+						minOrMax = j;//表示不是真的最小值，所以更新下标
+					}
+				}
+				else {
+					if (m_EmpArray[minOrMax]->m_Id < m_EmpArray[j]->m_Id) {
+						minOrMax = j;
+					}
+				}
+			}
+			//判断一开始认定 最小值或最大值 是不是 计算的最小值或最大值，如果不是 交换
+			if (i != minOrMax) {
+				Worker* temp = m_EmpArray[i];
+				m_EmpArray[i] = m_EmpArray[minOrMax];
+				m_EmpArray[minOrMax] = temp;
+			}
+		}
+		cout << "排序成功，排序后结果为：" << endl;
+		this->save();
+		this->Show_Emp();//定义里有清屏，所以不用再清屏
+	}
+}
