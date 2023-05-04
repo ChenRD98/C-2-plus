@@ -2,5 +2,6 @@
     "githubPullRequests.ignoredPullRequestBranches": [
         "master",
         "master"
-    ]
+    ],
+    "window.autoDetectColorScheme": true
 }
