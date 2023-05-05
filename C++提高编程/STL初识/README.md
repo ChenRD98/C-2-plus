@@ -34,3 +34,46 @@ STL容器就是将运用**最广泛的一些数据结构**实现出来
 算法分为：**质变算法**和**非质变算法**  
 质变算法：是指运算过程中会更改区间内的元素的内容。例如拷贝，替换，删除等  
 非质变算法：是指运算过程中不会更改区间内的元素内容，例如查找、计数、遍历、寻找极值等  
+  
+迭代器：容器和算法之间的粘合剂  
+提供一种方法，使之能够依序寻访某个容器所含的各个元素，而又无需暴露该容器的内部表达式  
+每个容器都有自己专属的迭代器  
+迭代器使用非常类似于指针，初学阶段我们可以先理解迭代器为指针  
+  
+迭代器种类：  
+<table border="2" >
+	<tr>
+		<th align=left>种类</th>
+		<th colspan="1" >功能</th>
+        <th>支持运算</th>
+	</tr>
+	<tr>
+		<td width="10%" align=left>输入迭代器</td>
+		<td width="50%" align=left bgcolor=#FFB6C1>对数据的只读访问</td>
+        <td align=left bgcolor=#FFB6C1>只读，支持++、==、!=</td>
+	</tr>
+	<tr>
+		<td align=left>输出迭代器</td>
+		<td align=left bgcolor=#D8BFD8>对数据的只写访问</td>
+        <td align=left bgcolor=#D8BFD8>只写，支持++</td>
+	</tr>
+	<tr>
+		<td align=left>前向迭代器</td>
+		<td align=left bgcolor=#B0C4DE>读写操作，并能向前推进迭代器</td>
+        <td align=left bgcolor=#B0C4DE>读写，支持++、==、!=</td>
+	</tr>
+	<tr>
+		<td align =left><font color=red>双向迭代器</front></td>
+		<td align=left bgcolor=#AFEEEE>读写操作，并能向前和向后操作</td>
+        <td align=left bgcolor=#AFEEEE>读写，支持++、--</td>
+	</tr>
+    <tr>
+		<td width="30%" align=left><font color=red>随机访问迭代器</front></td>
+		<td align=left bgcolor=#FFB6C1>读写操作，可以以跳跃的方式访问任意数据，功能最强的迭代器</td>
+        <td align=left bgcolor=#FFB6C1>读写，支持++、--、[n]、-n、<、<=、>、>=</td>
+	</tr>
+</table>
+  
+常用的容器中迭代器种类为双向迭代器和随机访问迭代器  
+  
+# 
