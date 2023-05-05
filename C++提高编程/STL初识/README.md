@@ -84,3 +84,6 @@ STL中最常用的容器为Vector，可以理解为数组，下面我们将学�
 算法：for_each  
 迭代器：vector<int>::iterator  
   
+## vector存放自定义数据类型
+vector<Person>::iterator it = v.begin()其中*it解出来的就是<>里的数据类型  
+  
