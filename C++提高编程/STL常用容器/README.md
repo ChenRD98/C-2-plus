@@ -52,3 +52,8 @@ string管理char*所分配的内存，不用担心复制越界和取值越界等
  * int rfind(const char c, int pos = 0) const; //查找字符c最后一次出现位置，从pos开始查找  
  * string& replace(int pos, int n, const string& str); //替换从pos开始n个字符为字符串str  
  * string& replace(int pos, int n, const char* s); //替换从pos开始n个字符为字符串s  
+总结：  
+ * rfind从右往左查找，find从左往右找  
+ * find找到后返回查找的第一个字符位置，找不到返回-1  
+ * replace在替换时，要指定从哪个位置起，多少个字符，替换成什么样的字符串  
+  
