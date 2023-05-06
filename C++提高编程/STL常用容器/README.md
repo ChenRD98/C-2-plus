@@ -29,3 +29,14 @@ string管理char*所分配的内存，不用担心复制越界和取值越界等
  * string& assign(const char* s， int n); //把字符串s的前n个字符赋给当前的字符串  
  * string& assign(const string &s); //把字符串s赋给当前字符串  
  * string& assign(int n, char c); //用n个字符c赋给当前字符串  
+  
+### string字符串拼接
+函数原型：  
+ * string& operator+=(const char* str); //重载+=操作符  
+ * string& operator+=(const char c);  
+ * string& operator+=(const string& str);  
+ * string& append(const char* s); //把字符串s连接到当前的字符串结尾  
+ * string& append(const char* s， int n); //把字符串s的前n个字符连接到当前的字符串结尾  
+ * string& append(const string &s); //同operator+=(const string& str)  
+ * string& append(const string &s, int pos, int n); //字符串s中从pos开始的n个字符c连接到当前字符串结尾  
+  
