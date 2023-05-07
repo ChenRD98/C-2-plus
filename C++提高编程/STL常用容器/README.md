@@ -60,4 +60,11 @@ string管理char*所分配的内存，不用担心复制越界和取值越界等
 ### string字符串比较
 比较方式：  
  * 字符串比较是按字符的ASCII码进行对比  
- 
+ = 返回 0  
+ > 返回 1  
+ < 返回 -1  
+  
+函数原型：  
+ * int compare(const string &s) const; //与字符串s比较  
+ * int cmpare(const char *s) const; //与字符s比较  
+  
