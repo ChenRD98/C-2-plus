@@ -75,3 +75,4 @@ string中单字符存取方式：
  * char& operator[](int n); //通过[]方式取字符  
  * char& at(int n); //通过at方式获取字符  
   
+### string插入和删除
