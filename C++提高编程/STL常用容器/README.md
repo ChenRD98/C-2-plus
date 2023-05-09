@@ -66,7 +66,7 @@ string管理char*所分配的内存，不用担心复制越界和取值越界等
   
 函数原型：  
  * int compare(const string &s) const; //与字符串s比较  
- * int cmpare(const char *s) const; //与字符s比较  
+ * int cmpare(const char *s) const; //与字符串s比较  
   
 总结：字符串对比主要是用于比较两个字符串是否相等，判断谁大谁小的意义不大  
   
@@ -76,3 +76,9 @@ string中单字符存取方式：
  * char& at(int n); //通过at方式获取字符  
   
 ### string插入和删除
+函数原型：  
+ * string& insert(int pos, const char* s); //插入字符串  
+ * string& insert(int pos, const string& s); //插入字符串  
+ * string& insert(int pos, int n, char c); //在指定位置插入n个字符c  
+ * string& erase(int pos, int n = npos); //删除从Pos开始的n个字符  
+  
