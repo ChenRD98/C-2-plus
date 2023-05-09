@@ -86,3 +86,5 @@ string中单字符存取方式：
 函数原型：  
  * string substr(int pos = 0, int n = npos) const; //返回由pos开始的n个字符组成的字符串  
   
+## vector容器
+### vector基本概念
