@@ -106,3 +106,9 @@ vector与普通数组区别：
  * vector(n, elem); //构造函数将n个elem拷贝给本身  
  * vector(const vector &vec); //拷贝构造函数  
   
+### vector赋值操作
+函数原型：  
+ * vector& operator=(const vector &vec); //重载等号操作符  
+ * assign(beg, end); //将[beg, end)区间中的数据拷贝赋值给本身  
+ * assign(n, elem); //将n个elem拷贝赋值给本身  
+  
