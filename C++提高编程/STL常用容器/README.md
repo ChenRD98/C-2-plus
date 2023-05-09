@@ -96,4 +96,13 @@ vector与普通数组区别：
   
 动态扩展：  
  * 并不是在原空间之后续接新空间，而是找更大的内存空间，然后将原数据拷贝到新空间，释放原空间  
+ 
  * vector容器的迭代器是支持随机访问的迭代器  
+  
+### vector构造函数
+函数原型：  
+ * vector<T> v; //采用模板实现类实现，默认构造函数  
+ * vector(v.begin(), v.end()); //将v[begin(),end())区间内的元素拷贝给本身  
+ * vector(n, elem); //构造函数将n个elem拷贝给本身  
+ * vector(const vector &vec); //拷贝构造函数  
+  
