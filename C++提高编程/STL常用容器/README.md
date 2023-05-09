@@ -82,3 +82,7 @@ string中单字符存取方式：
  * string& insert(int pos, int n, char c); //在指定位置插入n个字符c  
  * string& erase(int pos, int n = npos); //删除从Pos开始的n个字符  
   
+### string子串
+函数原型：  
+ * string substr(int pos = 0, int n = npos) const; //返回由pos开始的n个字符组成的字符串  
+  
