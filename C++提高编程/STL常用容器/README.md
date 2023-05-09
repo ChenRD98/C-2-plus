@@ -96,7 +96,7 @@ vector与普通数组区别：
   
 动态扩展：  
  * 并不是在原空间之后续接新空间，而是找更大的内存空间，然后将原数据拷贝到新空间，释放原空间  
- 
+![](https://github.com/ChenRD98/C-plusplus/blob/master/C%2B%2B%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B/STL%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8/vector%E5%AE%B9%E5%99%A8/vector%E5%AE%B9%E5%99%A8.png)  
  * vector容器的迭代器是支持随机访问的迭代器  
   
 ### vector构造函数
