@@ -119,3 +119,10 @@ vector与普通数组区别：
  * size(); //返回容器中元素的个数  
  * resize(int num); //重新指定容器的长度为num，若容器变长，则以默认值填充新位置。如果容器变短，则末尾超出容器长度的元素被删除  
  * resize(int num, elem); //重新指定容器的长度为num，若容器变长，则以elem填充新位置。如果容器变短，则末尾超出容器长度的元素被删除  
+  
+### vector插入和删除
+函数原型：  
+ * push_back(ele); //尾部插入元素ele
+ * pop_back(); //删除最后一个元素  
+ * insert(const_iterator pos, ele); //迭代器指向位置pos插入元素ele
+ * insert(const_iterator pis, int count, ele); //
