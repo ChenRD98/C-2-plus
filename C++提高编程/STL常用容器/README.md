@@ -159,3 +159,4 @@ deque与vector区别：
  * deque相对而言，对头部的插入删除速度会比vector快  
  * vector访问元素时的速度会比deque快，这和两者内部实现有关  
   
+![]()
