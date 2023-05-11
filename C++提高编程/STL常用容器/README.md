@@ -140,4 +140,6 @@ vector与普通数组区别：
 ### vector互换容器
 函数原型：  
  * swap(vec); //将vec与本身的元素互换  
+ 巧用swap可以收缩内存空间，vector<int>(v).swap(v)，vector<int>(v)匿名对象，当前行执行完系统回收  
+  
   
