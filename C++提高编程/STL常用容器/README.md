@@ -169,4 +169,10 @@ deque内部有个**中控器**，维护每段缓冲区中的内容，缓冲区�
   
  * deque容器的迭代器也支持随机访问  
   
+### deque构造函数
+函数原型：  
+ * deque<T> deqT; //默认构造形式  
+ * deque(beg, end); //构造函数将[beg, end)区间中的元素拷贝给本身  
+ * deque(n, elem); //构造函数将n个elem拷贝给本身  
+ * deque(const deque &deq); //拷贝构造函数
   
