@@ -165,3 +165,8 @@ deque内部工作原理：
 deque内部有个**中控器**，维护每段缓冲区中的内容，缓冲区中存放真实数据  
 中控器维护的时每个缓冲区的地址，使得使用deque时像一片连续的内存空间  
   
+![](https://github.com/ChenRD98/C-plusplus/blob/master/C%2B%2B%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B/STL%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8/deque%E5%AE%B9%E5%99%A8/deque%E5%AE%B9%E5%99%A8%E5%86%85%E9%83%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png)  
+  
+ * deque容器的迭代器也支持随机访问  
+  
+  
