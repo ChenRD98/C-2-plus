@@ -130,3 +130,10 @@ vector与普通数组区别：
  * erase(const_iterator start, const_iterator end); //删除迭代器从start到end之间的元素  
  * clear(); //删除容器中所有元素  
   
+### vector数据存取
+函数原型：  
+ * at(int idx); //返回索引idx所指的数据  
+ * operator[]; //返回索引idx所指的数据  
+ * front(); //返回容器中第一个数据元素  
+ 8 back(); //返回容器中最后一个数据元素  
+  
