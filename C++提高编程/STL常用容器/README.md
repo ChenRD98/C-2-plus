@@ -176,3 +176,9 @@ deque内部有个**中控器**，维护每段缓冲区中的内容，缓冲区�
  * deque(n, elem); //构造函数将n个elem拷贝给本身  
  * deque(const deque &deq); //拷贝构造函数
   
+### deque赋值操作
+函数原型：  
+ * deque& operator=(const deque &deq); //重载等号操作符  
+ * assign(beg, end); //将[beg, end)区间中的数据拷贝赋值给本身  
+ * assign(n, elem); //将n个elem拷贝赋值给本身  
+  
