@@ -214,3 +214,8 @@ deque内部有个**中控器**，维护每段缓冲区中的内容，缓冲区�
  * front(); //返回容器中第一个数据元素  
  * back(); //返回容器中最后一个数据元素  
   
+### deque排序
+算法：
+ * sort(iterator beg, iterator end); //对beg和end区间内元素进行排序  
+总结：sort算法使用时需要包含algorithm头文件。对于支持随机访问的迭代器的容器，都可以使用sort算法直接排序  
+  
