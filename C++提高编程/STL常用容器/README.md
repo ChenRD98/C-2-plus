@@ -194,8 +194,8 @@ deque内部有个**中控器**，维护每段缓冲区中的内容，缓冲区�
 两端插入操作：  
  * push_back(elem); //在容器尾部添加一个数据  
  * push_front(elem); //在容器头部插入一个数据  
- * pop_back(elem); //删除容器最后一个数据  
- * pop_front(elem); //删除容器第一个数据  
+ * pop_back(); //删除容器最后一个数据  
+ * pop_front(); //删除容器第一个数据  
   
 指定位置操作：  
  * insert(pos, elem); //在pos位置插入一个elem元素的拷贝，返回新数据的位置  
