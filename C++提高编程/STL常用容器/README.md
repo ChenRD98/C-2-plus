@@ -227,8 +227,31 @@ deque内部有个**中控器**，维护每段缓冲区中的内容，缓冲区�
  2.遍历vector容器，取出每一个选手，执行for循环，可以把10个评分打分存到deque容器中  
  3.sort算法对deque容器中分束排序，取出最高分和最低分  
  4.deque容器遍历一遍，累加总分  
- 5.获取平均分  
+stack基本概念 5.获取平均分  
   
 ## stack容器
 ### stack基本概念
 概念：stack是一种**先进后出**(First In Last Out, FILO)的数据结构，它只有一个出口  
+![](https://github.com/ChenRD98/C-plusplus/blob/master/C%2B%2B%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B/STL%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8/stack%E5%AE%B9%E5%99%A8/stack%E5%AE%B9%E5%99%A8.png)  
+  
+栈中只有顶端的元素才可以被外界使用，因此栈没有遍历操作  
+栈中进入数据称为——入栈push  
+栈中弹出数据称为——出栈pop  
+  
+### stack常用接口
+构造函数：  
+ * stack<T> stk; //stack采用模板类实现，stack对象的默认构造形式  
+ * stack(const stack &stk); //拷贝构造函数  
+  
+赋值操作：  
+ * stack& operator=(const stack &stk); //重载等号操作符  
+  
+数据存取：  
+ * push(elem); //向栈顶添加元素  
+ * pop(); //从栈顶移除第一个元素  
+ * top(); //返回栈顶元素  
+  
+大小操作：  
+ * empty(); //判断堆栈是否为空  
+ * size(); //返回栈的大小  
+ 
