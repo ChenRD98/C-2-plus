@@ -255,3 +255,14 @@ stack基本概念 5.获取平均分
  * empty(); //判断堆栈是否为空  
  * size(); //返回栈的大小  
   
+## queue容器
+### queue基本概念
+概念：Queue是一种**先进先出**(First In First Out, FIFO)的数据结构，它有两个出口  
+![](https://github.com/ChenRD98/C-plusplus/blob/master/C%2B%2B%E6%8F%90%E9%AB%98%E7%BC%96%E7%A8%8B/STL%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8/queue%E5%AE%B9%E5%99%A8/queue%E5%AE%B9%E5%99%A8.png)  
+  
+队列容器允许从一端新增元素，从另一端移除元素  
+队列中只有队头和队尾才可以被外界使用，因此队列不允许有遍历行为  
+队列中进数据称为——入队push  
+队列中出数据称为——出队pop  
+  
+  
