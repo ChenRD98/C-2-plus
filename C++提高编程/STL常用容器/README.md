@@ -312,3 +312,10 @@ List有一个重要的性质，插入操作和删除操作都不会造成原有l
  * list(n, elem); //构造函数将n个elem拷贝给本身  
  * list(const list *lst); //拷贝构造函数  
   
+### list赋值和交换
+函数原型：  
+ * assign(beg, end); //将[beg, end)区间中的数据拷贝赋值给本身  
+ * assign(n, elem); //将n个elem拷贝赋值给本身  
+ * list& operator=(const list &lst); //重载符号操作符  
+ * swap(lst); //将lst与本身的元素互换  
+  
