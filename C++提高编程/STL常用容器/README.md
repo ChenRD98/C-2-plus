@@ -305,3 +305,10 @@ List有一个重要的性质，插入操作和删除操作都不会造成原有l
   
 总结：STL中**list和vector是两个最常被使用的容器**，各有优缺点  
   
+### list构造函数
+函数原理：  
+ * list<T> lst; //list采用模板类实现，对象的默认构造形式  
+ * list(beg, end); //构造函数将[beg, end)区间中的元素拷贝给本身  
+ * list(n, elem); //构造函数将n个elem拷贝给本身  
+ * list(const list *lst); //拷贝构造函数  
+  
