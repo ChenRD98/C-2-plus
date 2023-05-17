@@ -326,4 +326,17 @@ List有一个重要的性质，插入操作和删除操作都不会造成原有l
  * resize(num); //重新指定容器的长度为num，若容器变长，则以默认值填充新位置。如果容器变短，则末尾超出容器长度的元素被删除  
  * resize(num, elem); //重新指定容器的长度为num，若容器变长，则以elem填充新位置。如果容器变短，则末尾超出容器长度的元素被删除  
   
+### list插入和删除
+函数原型：  
+ * push_back(elem); //在容器尾部加入一个元素  
+ * push_front(elem); //在容器头部插入一个数据  
+ * pop_back(); //删除容器最后一个数据  
+ * pop_front(); //删除容器第一个数据  
+ * insert(pos, elem); //在pos位置插入一个elem元素的拷贝，返回新数据的位置  
+ * insert(pos, n, elem); //在pos位置插入n个elem数据，无返回值  
+ * insert(pos, beg, end); //在pos位置插入[beg, end)区间中的数据，无返回值  
+ * clear(); //清空容器的所有数据  
+ * erase(beg, end); //删除[beg, end)区间中的数据，返回下一个数据的位置  
+ * erase(pos); //删除pos位置的数据，返回下一个数据的位置  
+ * remove(elem); //删除容器中所有与elem值匹配的元素  
   
