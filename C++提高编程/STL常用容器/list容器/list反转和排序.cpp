@@ -28,7 +28,7 @@ void test01() {
 	L1.sort();	//升序，从小到大
 	printList(L1);
 
-	L1.sort(myCompare); //降序，从大到小
+	L1.sort(myCompare); //写一个回调函数myCompare实现降序，从大到小
 }
 
 int main() {
