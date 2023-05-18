@@ -395,3 +395,9 @@ set和multiset区别：
  * find(key); //查找key是否存在，若存在，返回该键的元素的迭代器；若不存在，返回set.end();  
  * count(key); //统计key元素个数  
   
+### set和multiset区别
+区别：  
+ * set不可以插入重复数据，而multiset可以  
+ * set插入数据的同时会返回插入结果，表示插入是否成功  
+ * multiset不会检测数据，因此可以插入重复数据  
+  
