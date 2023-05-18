@@ -376,3 +376,9 @@ set和multiset区别：
 赋值：  
  * set& operator=(const set &st); //重载等号操作符  
   
+### set大小和交换
+函数原型：  
+ * size(); //返回容器中元素的数目  
+ * empty(); //判断容器是否为空  
+ * swap(st); //交换两个集合容器  
+  
