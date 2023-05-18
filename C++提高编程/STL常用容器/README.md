@@ -368,3 +368,11 @@ set和multiset区别：
  * set不允许容器中有重复的元素  
  * multiset允许容器中有重复的元素  
   
+### set构造和赋值
+构造：  
+ * set<T> st; //默认构造函数；  
+ * set(const set &st); //拷贝构造函数  
+  
+赋值：  
+ * set& operator=(const set &st); //重载等号操作符  
+  
