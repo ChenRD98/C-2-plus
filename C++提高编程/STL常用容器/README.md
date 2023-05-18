@@ -390,3 +390,8 @@ set和multiset区别：
  * erase(beg, end); //删除区间[beg, end)的所有元素，返回下一个元素的迭代器  
  * erase(elem); //删除容器中值为elem的元素  
   
+### set查找和统计
+函数原型：  
+ * find(key); //查找key是否存在，若存在，返回该键的元素的迭代器；若不存在，返回set.end();  
+ * count(key); //统计key元素个数  
+  
