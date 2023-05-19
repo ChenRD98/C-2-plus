@@ -408,3 +408,6 @@ set和multiset区别：
  * pair<type, type> p (value1, value2);  
  * pair<type, type> p = make_pair(value1, value2);  
   
+### set容器排序
+主要技术点：利用仿函数，可以改变排序规则  
+  
