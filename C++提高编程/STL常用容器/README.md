@@ -401,3 +401,10 @@ set和multiset区别：
  * set插入数据的同时会返回插入结果，表示插入是否成功  
  * multiset不会检测数据，因此可以插入重复数据  
   
+### pair对组创建
+功能描述：成对出现的数据。利用对组可以返回两个数据  
+  
+两种创建方式：  
+ * pair<type, type> p (value1, value2);  
+ * pair<type, type> p = make_pair(value1, value2);  
+  
