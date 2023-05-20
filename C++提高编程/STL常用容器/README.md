@@ -447,3 +447,11 @@ map和multimap区别：
  * empty(); //判断容器是否为空  
  * swap(mp); //交换两个map容器  
   
+### map插入和删除
+函数原型：  
+ * insert(elem); //在容器中插入元素  
+ * clear(); //清除所有元素  
+ * erase(pos); //删除pos迭代器所指的元素，返回下一个元素的迭代器  
+ * erase(beg, end); //删除区间[beg, end)的所有元素，返回下一个元素的迭代器  
+ * erase(key); //删除容器中值为key的元素  
+  
