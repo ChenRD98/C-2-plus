@@ -441,3 +441,9 @@ map和multimap区别：
 赋值：  
  * map& operator=(const map &mp); //重载等号操作符  
   
+### map大小和交换
+函数原型：  
+ * size(); //返回容器中元素的数目  
+ * empty(); //判断容器是否为空  
+ * swap(mp); //交换两个map容器  
+  
