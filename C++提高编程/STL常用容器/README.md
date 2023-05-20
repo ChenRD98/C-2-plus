@@ -455,3 +455,8 @@ map和multimap区别：
  * erase(beg, end); //删除区间[beg, end)的所有元素，返回下一个元素的迭代器  
  * erase(key); //删除容器中值为key的元素  
   
+### map查找和统计
+函数原型：  
+ * find(key); //查找key是否存在，若存在，返回该键的元素的迭代器；若不存在，返回mp.end();  
+ * count(key); //统计key的元素个数  
+  
