@@ -432,3 +432,12 @@ map和multimap区别：
  * map不允许容器中有重复key值元素  
  * multimap允许容器中有重复key值元素  
   
+### map构造和赋值
+函数原型：  
+构造：  
+ * map<T1, T2> mp; //map默认构造函数  
+ * map(const map &mp); //拷贝构造函数  
+  
+赋值：  
+ * map& operator=(const map &mp); //重载等号操作符  
+  
