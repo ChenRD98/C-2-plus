@@ -55,7 +55,7 @@
 仿函数原型：  
  * template<class T> bool equal_to<T> //等于  
  * template<class T> bool not_equal_to<T> //不等于  
- * template<class T> bool greater<T> //大于  
+ * template<class T> bool greater<T> //大于(最常用)  
  * template<class T> bool greater_equal<T> //大于等于  
  * template<class T> bool less<T> //小于  
  * template<class T> bool less_equal<T> //小于等于  
