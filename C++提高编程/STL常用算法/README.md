@@ -17,4 +17,14 @@
  //end结束迭代器  
  //_func函数或函数对象  
   
-
+总结：for_each在实际开发中是最常用遍历算法，需要熟练掌握  
+  
+### transform
+功能描述：搬运容器到另一个容器中  
+函数原型：  
+ * transform(iterator beg1, iterator beg2, _func);  
+ //beg1源容器开始迭代器  
+ //end1源容器结束迭代器  
+ //beg2目标容器开始迭代器  
+ //_func函数或函数对象  
+  
