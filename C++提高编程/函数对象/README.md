@@ -60,3 +60,9 @@
  * template<class T> bool less<T> //小于  
  * template<class T> bool less_equal<T> //小于等于  
   
+### 逻辑仿函数
+仿函数原型：  
+ * template<class T> bool logical_and<T> //逻辑与  
+ * template<class T> bool logical_or<T> //逻辑或  
+ * template<class T> bool logical_not<T> //逻辑非  
+  
