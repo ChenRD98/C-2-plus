@@ -28,3 +28,12 @@
  //beg2目标容器开始迭代器  
  //_func函数或函数对象  
   
+## 常用查找算法
+算法简介：  
+ * find //查找元素  
+ * find_if //按条件查找元素  
+ * adjacent_find //查找相邻重复元素  
+ * binary_search //二分查找法  
+ * count //统计元素个数  
+ * count_if //按条件统计元素个数  
+  
