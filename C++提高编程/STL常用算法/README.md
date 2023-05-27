@@ -72,7 +72,14 @@
 总结：实际开发中少见，面试题中会出现  
   
 ### binary_search
-
-
-
-* 
+功能描述：  
+ * 查找指定元素是否存在  
+  
+函数原型：  
+ * bool binary_search(iterator beg, iterator end, value);  
+ //查找指定的元素，查到返回true，否则false  
+ //注意：在**无序序列中不可使用**  
+ //beg开始迭代器  
+ //end结束迭代器  
+ //value查找的元素  
+  
