@@ -93,3 +93,11 @@
   
 总结：统计自定义数据类型时，需要配合重载operator==  
   
+### count_if
+函数原型：  
+ * count_if(iterator beg, iterator end, _Pred);  
+ //按条件统计元素出现次数  
+ //beg开始迭代器  
+ //end结束迭代器  
+ //_Pred函数或者谓词（返回bool类型的仿函数）  
+  
