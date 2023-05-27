@@ -83,3 +83,11 @@
  //end结束迭代器  
  //value查找的元素  
   
+### count
+函数原型：  
+ * count(iterator beg, iterator end, value);  
+ //统计元素出现次数  
+ //beg开始迭代器  
+ //end结束迭代器  
+ //value统计的元素  
+  
