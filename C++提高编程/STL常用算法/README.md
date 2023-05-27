@@ -59,3 +59,13 @@
  //end结束迭代器  
  //_Pred函数或者谓词（返回bool类型的仿函数）  
   
+### adjacent_find
+功能描述：  
+ * 查找相邻重复元素  
+  
+函数原型：  
+ *adjacent_find(iterator beg, iterator end);  
+ //查找相邻重复元素，返回相邻元素的第一个位置的迭代器  
+ //beg开始迭代器  
+ //end结束迭代器  
+  
