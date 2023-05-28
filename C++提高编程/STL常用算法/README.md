@@ -108,3 +108,11 @@
  * merge //容器元素合并，并存储到另一容器中  
  * reverse //反转指定范围的元素  
   
+### sort
+函数原型：  
+ * sort(iterator beg, iterator end, _Pred);  
+ //无谓词默认从小到大排序  
+ //beg开始迭代器  
+ //end结束迭代器  
+ //_Pred函数或者谓词（返回bool类型的仿函数）  
+  
