@@ -176,8 +176,21 @@
   
 函数原型：  
  * replace(iterator beg, iterator end, oldvalue, newvalue);  
- //将区间内就元素 替换成 新元素  
+ //将区间内旧元素 替换成 新元素  
  //beg开始迭代器  
  //end结束迭代器  
- //oldvalue  
+ //oldvalue旧元素  
+ //newvalue新元素  
+  
+### replace_if
+功能描述：  
+ * 容器内指定范围满足条件的元素替换为新元素  
+  
+函数原型：  
+ * replace_if(iterator beg, iterator end, _Pred, newvalue);  
+ //按条件替换元素，满足条件的替换成指定元素  
+ //beg开始迭代器  
+ //end结束迭代器  
+ //_Pred谓词
+ //newvalue新元素  
   
