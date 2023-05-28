@@ -170,3 +170,14 @@
  //end结束迭代器  
  //dest目标容器开始迭代器  
   
+### replace
+功能描述：  
+ * 将容器内指定范围的旧元素修改为新元素  
+  
+函数原型：  
+ * replace(iterator beg, iterator end, oldvalue, newvalue);  
+ //将区间内就元素 替换成 新元素  
+ //beg开始迭代器  
+ //end结束迭代器  
+ //oldvalue  
+  
