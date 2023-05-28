@@ -159,5 +159,14 @@
  * replace_if //容器内指定范围满足条件的元素替换为新元素  
  * swap //呼唤两个容器的元素  
   
-
+### copy
+功能描述：  
+ * 容器内指定范围的元素拷贝到另一容器中  
+  
+函数原型：  
+ * copy(iterator beg, iterator end, iterator dest);  
+ //容器内指定范围的元素拷贝到目标容器中  
+ //beg开始迭代器  
+ //end结束迭代器  
+ //dest目标容器开始迭代器  
   
