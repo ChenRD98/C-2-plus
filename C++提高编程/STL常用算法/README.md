@@ -140,3 +140,13 @@
  //end2容器2结束迭代器  
  //dest目标容器开始迭代器  
   
+### reverse
+功能描述：  
+ * 将容器内元素进行反转  
+  
+函数原型：  
+ * reverse(iterator beg, iterator end);  
+ //反转指定范围内元素  
+ //beg开始迭代器  
+ //end结束迭代器  
+  
