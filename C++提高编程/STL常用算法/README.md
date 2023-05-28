@@ -116,3 +116,13 @@
  //end结束迭代器  
  //_Pred函数或者谓词（返回bool类型的仿函数）  
   
+### random_shuffle
+功能描述：  
+ * 洗牌 指定范围内的元素随机调整次序  
+  
+函数原型：  
+ * random_shuffle(iterator beg, iterator end);  
+ //指定范围内的元素随机调整次序  
+ //beg开始迭代器  
+ //end结束迭代器  
+  
