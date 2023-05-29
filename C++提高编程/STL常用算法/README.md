@@ -220,3 +220,14 @@
  //end结束迭代器  
  //value起始值  
   
+### fill
+功能描述：  
+ * 向容器中填充元素  
+  
+函数原型：  
+ * fill(iterator beg, iterator end, value);  
+ //向容器中填充元素  
+ //beg开始迭代器  
+ //end结束迭代器  
+ //value填充的值  
+  
