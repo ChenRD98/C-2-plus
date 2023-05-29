@@ -231,3 +231,9 @@
  //end结束迭代器  
  //value填充的值  
   
+## 常用集合算法
+算法简介：  
+ * set_intersection //求两个容器的交集  
+ * set_union //求两个容器的并集  
+ * set_difference //求两个容器的差集  
+  
