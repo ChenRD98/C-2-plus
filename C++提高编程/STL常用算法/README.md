@@ -209,4 +209,14 @@
  * accumulate //计算容器元素累计总和  
  * fill //向容器中添加元素  
   
-###
+### accumulate
+功能描述：  
+ * 计算容器元素累计总和  
+  
+函数原型：  
+ * accumulate(iterator beg, iterator end, value);  
+ //计算容器元素累计总和  
+ //beg开始迭代器  
+ //end结束迭代器  
+ //value起始值  
+  
