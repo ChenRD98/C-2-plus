@@ -237,3 +237,13 @@
  * set_union //求两个容器的并集  
  * set_difference //求两个容器的差集  
   
+### set_intersection
+函数原型：  
+ * set_intersection(iteration beg1, iteration end1, iteration beg2, iteration end2, iteration dest);  
+ //求两个集合的交集  
+ //beg1容器1开始迭代器  
+ //end1容器1结束迭代器  
+ //beg2容器2开始迭代器  
+ //end2容器2结束迭代器  
+ //dest目标容器开始迭代器  
+  
