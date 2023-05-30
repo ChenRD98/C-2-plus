@@ -252,3 +252,14 @@
  * 目标容器开辟空间需要从**两个容器中取小值**  
  * set_intersection返回值既是交集中最后一个元素的位置  
   
+### set_union
+函数原型：  
+ * set_union(iteration beg1, iteration end1, iteration beg2, iteration end2, iteration dest);  
+ //求两个集合的并集  
+ //**注意：两个集合必须是有序序列**  
+ //beg1容器1开始迭代器  
+ //end1容器1结束迭代器  
+ //beg2容器2开始迭代器  
+ //end2容器2结束迭代器  
+ //dest目标容器开始迭代器  
+  
