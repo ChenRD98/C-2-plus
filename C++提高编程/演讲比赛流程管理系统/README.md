@@ -30,3 +30,6 @@
 ### 添加成员函数
 在管理类speechManager.h中添加成员函数 void show_Menu();  
   
+### 菜单功能实现
+在管理类speechManager.cpp中实现show_Mennu()函数  
+  

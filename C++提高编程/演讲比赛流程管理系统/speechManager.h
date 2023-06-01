@@ -8,6 +8,11 @@ public:
 
 	//构造函数
 	SpeechManager();
+
+    //展示菜单
+    void show_Menu();
+
+
 	//析构函数
 	~SpeechManager();
 
