@@ -26,3 +26,7 @@
 ### 创建文件
  * 在头文件和源文件的文件夹下分别创建speechManager.h和 speechManager.cpp文件  
   
+## 菜单功能
+### 添加成员函数
+在管理类speechManager.h中添加成员函数 void show_Menu();  
+  
