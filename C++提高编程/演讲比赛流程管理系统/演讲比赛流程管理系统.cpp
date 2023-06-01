@@ -23,6 +23,7 @@ int main() {
 		switch (choice) {
 		//开始比赛
 		case 1:
+			sm.startSpeech();
 			break;
 
 		//查看记录

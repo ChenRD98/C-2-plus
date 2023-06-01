@@ -78,3 +78,11 @@
  * 在speechManager.cpp中将startSpeech的空实现先写入  
  * 我们可以先将整个比赛的流程 写到函数中  
   
+#### 抽签
+功能描述：  
+ * 正式比赛前，所有选手的比赛顺序需要打乱，我们只需要将存放选手编号的容器 打乱次序即可  
+ * 在speechManager.h中提供抽签的成员函数 void speechDraw();  
+ * 在speechmanager.cpp中实现成员函数 void speechDraw();  
+ * 在startSpeech比赛流程控制的函数中，调用抽签函数  
+ * 在main函数中，分支1选项中，调用开始比赛的接口  
+  

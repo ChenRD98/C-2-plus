@@ -4,6 +4,7 @@ using namespace std;
 #include<vector>
 #include<map>
 #include"speaker.h"
+#include<algorithm>
 
 //设计演讲管理类
 class SpeechManager {
@@ -23,6 +24,10 @@ public:
 
 	//开始比赛 - 比赛流程控制
 	void startSpeech();
+
+	//抽签
+	void speechDraw();
+
 
 
 
