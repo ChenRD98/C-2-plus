@@ -66,3 +66,9 @@
  * 在speechManager.cpp中实现 void initSpeech();  
  * SpeechManager构造函数中调用 void initSpeech();  
   
+### 创建选手
+ * 在speechManager.h中提供开始比赛的成员函数 void createSpeaker();  
+ * speechManager.cpp中实现 void createSpeaker();  
+ * SpeechManager类的构造函数中调用 void createSpeaker();  
+ * 测试 在main函数中，可以在创建完管理对象后，使用for循环代码遍历容器测试12名选手初始状态  
+  

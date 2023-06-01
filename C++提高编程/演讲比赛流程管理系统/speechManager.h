@@ -17,6 +17,11 @@ public:
 
 	//初始化属性
 	void initSpeech();
+	
+	//初始化创建12名选手
+	void createSpeaker();
+
+
 
 	//退出功能
 	void exitSystem();
