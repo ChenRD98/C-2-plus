@@ -57,3 +57,12 @@
  * 选手类中的属性包含：选手姓名，分数  
  * 头文件中包含sppeaker.h文件，并添加代码  
   
+### 比赛
+#### 成员属性添加
+ * 在speechManager.h中添加属性  
+  
+#### 初始化属性
+ * 在speechManager.h中提供开始比赛的成员函数 void initSpeech();  
+ * 在speechManager.cpp中实现 void initSpeech();  
+ * SpeechManager构造函数中调用 void initSpeech();  
+  

@@ -2,7 +2,8 @@
 
 //构造函数
 SpeechManager::SpeechManager() {
-
+	//初始化属性
+	this->initSpeech();
 }
 
 //展示菜单
@@ -15,6 +16,17 @@ void show_Menu() {
 	cout << "***** 0.退出比赛程序 *****" << endl;
 	cout << "**************************" << endl;
 	cout << endl;
+}
+
+//初始化属性
+void SpeechManager::initSpeech() {
+	//容器保证为空
+	this->v1.clear();
+	this->v2.clear();
+	this->vVictory.clear();
+	this->m_Speaker.clear();
+	//初始化比赛轮数
+	this->m_Index = 1;
 }
 
 
