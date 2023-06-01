@@ -13,6 +13,12 @@ public:
     void show_Menu();
 
 
+
+
+
+	//退出功能
+	void exitSystem();
+
 	//析构函数
 	~SpeechManager();
 
