@@ -61,6 +61,7 @@ void SpeechManager::startSpeech() {
 	this->speechDraw();
 
 	//2、比赛
+	this->speechContest();
 
 	//3、显示晋级结果
 

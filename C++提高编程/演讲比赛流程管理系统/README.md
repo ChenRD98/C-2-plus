@@ -89,4 +89,5 @@
 #### 开始比赛
  * 在speechManager.h中提供比赛的成员函数 void speechContest();  
  * 在speechManager.cpp中实现成员函数 void speechContest();  
- 
+ * 在startSpeech比赛流程控制的函数中，调用比赛函数  
+  
