@@ -105,7 +105,10 @@ void SpeechManager::speechDraw() {
 	cout << endl;
 }
 
+//比赛
+void SpeechManager::speechContest() {
 
+}
 
 
 //退出功能
