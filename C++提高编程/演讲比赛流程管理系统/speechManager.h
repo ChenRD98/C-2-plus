@@ -5,6 +5,8 @@ using namespace std;
 #include<map>
 #include"speaker.h"
 #include<algorithm>
+#include<deque>
+#include<numeric>
 
 //设计演讲管理类
 class SpeechManager {
