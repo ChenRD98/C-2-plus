@@ -7,6 +7,7 @@ using namespace std;
 #include<algorithm>
 #include<deque>
 #include<numeric>
+#include<functional>
 
 //设计演讲管理类
 class SpeechManager {
