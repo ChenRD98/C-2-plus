@@ -96,3 +96,7 @@
  * 在speechManager.cpp中实现成员函数 void showScore();  
  * 在startSpeech比赛流程控制的函数中，调用显示比赛分数函数  
   
+#### 第二轮比赛
+第二轮比赛流程同第一轮，只是比赛的轮数+1，其余流程不变  
+ * 在startSpeech比赛流程控制的函数中，加入第二轮的流程  
+
