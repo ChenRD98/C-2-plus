@@ -28,6 +28,7 @@ int main() {
 
 		//查看记录
 		case 2:
+			sm.loadRecord();
 			break;
 
 		//清空记录
