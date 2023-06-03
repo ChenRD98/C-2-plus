@@ -91,3 +91,8 @@
  * 在speechManager.cpp中实现成员函数 void speechContest();  
  * 在startSpeech比赛流程控制的函数中，调用比赛函数  
   
+#### 显示比赛分数
+ * 在speechManager.h中提供显示分数的成员函数 void showScore();  
+ * 在speechManager.cpp中实现成员函数 void showScore();  
+ * 在startSpeech比赛流程控制的函数中，调用显示比赛分数函数  
+  

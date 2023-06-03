@@ -34,6 +34,11 @@ public:
 	//比赛
 	void speechContest();
 
+	//显示比赛结果
+	void showScore();
+
+
+
 
 
 
