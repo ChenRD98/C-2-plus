@@ -41,8 +41,8 @@ public:
 	//保存记录
 	void saveRecord();
 
-
-
+	//读取记录
+	void loadRecord();
 
 	//退出功能
 	void exitSystem();
@@ -50,6 +50,11 @@ public:
 	//析构函数
 	~SpeechManager();
 
+	//文件为空的标志
+	bool fileIsEmpty;
+
+	//往届记录
+	map<int, vector<string>> m_Record;
 
 	//比赛选手 容器 12人
 	vector<int>v1;

@@ -109,3 +109,12 @@
  * 在speechManager.cpp中实现成员函数 void saveRecord();  
  * 在startSpeech比赛流程控制的函数中，最后调用保存记录分数函数  
   
+## 查看记录
+### 读取记录分数
+ * 在speechManager.h中添加读取记录的成员函数 void loadRecord();  
+ * 添加判断文件是否为空的标志 bool fileIsEmpty;  
+ * 添加往届记录的容器 map<int, vector<string>> m_Record;  
+其中m_Record中的key代表第几届，value记录具体的信息  
+ * 在speechManager.cpp中实现成员函数 void loadRecord();  
+ * 在SpeechManager构造函数中调用获取往届记录函数  
+  
