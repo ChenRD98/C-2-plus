@@ -79,8 +79,11 @@ void SpeechManager::startSpeech() {
 	this->showScore();
 
 	//4、保存分数
+	this->saveRecord();
 
-
+	cout << "本届比赛完毕！" << endl;
+	system("pause");
+	system("cls");
 }
 
 //抽签
@@ -198,6 +201,22 @@ void SpeechManager::showScore() {
 	this->show_Menu();
 }
 
+//保存记录
+void SpeechManager::saveRecord() {
+	ofstream ofs;
+	ofs.open("speech.csv", ios::out | ios::app);	//用输出的方式打开文件	--写文件
+
+	//将每个人数据写入到文件中
+	for (vector<int>::iterator it = vVictory.begin(); it != vVictory.end(); it++) {
+		ofs << *it << "," << m_Speaker[*it].m_Score[1] << ",";
+	}
+	ofs << endl;
+
+	//关闭文件
+	ofs.close();
+
+	cout << "记录已经保存" << endl;
+}
 
 
 

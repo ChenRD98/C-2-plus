@@ -99,4 +99,13 @@
 #### 第二轮比赛
 第二轮比赛流程同第一轮，只是比赛的轮数+1，其余流程不变  
  * 在startSpeech比赛流程控制的函数中，加入第二轮的流程  
-
+  
+### 保存分数
+功能描述：  
+ * 将每次演讲比赛的得分记录到文件中  
+  
+功能实现：  
+ * 在speechManager.h中添加保存记录的成员函数 void saveRecord();  
+ * 在speechManager.cpp中实现成员函数 void saveRecord();  
+ * 在startSpeech比赛流程控制的函数中，最后调用保存记录分数函数  
+  
