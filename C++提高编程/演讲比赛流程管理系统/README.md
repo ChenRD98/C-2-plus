@@ -118,3 +118,7 @@
  * 在speechManager.cpp中实现成员函数 void loadRecord();  
  * 在SpeechManager构造函数中调用获取往届记录函数  
   
+### 查看记录功能
+ * 在speechManager.h中添加展示记录的成员函数 void showRecord();  
+ * 在speechManager.cpp中实现成员函数 void showRecord();  
+  
