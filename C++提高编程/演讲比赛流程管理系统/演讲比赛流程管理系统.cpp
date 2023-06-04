@@ -2,8 +2,11 @@
 using namespace std;
 #include "speechManager.h"
 #include<string>
+#include<ctime>
 
 int main() {
+	srand((unsigned int)time(NULL));
+
 	SpeechManager sm;
 
 	//测试12名选手创建
