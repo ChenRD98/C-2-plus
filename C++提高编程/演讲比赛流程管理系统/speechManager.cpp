@@ -218,6 +218,9 @@ void SpeechManager::saveRecord() {
 	//关闭文件
 	ofs.close();
 
+	//有记录了，文件不为空
+	this->fileIsEmpty = false;
+
 	cout << "记录已经保存" << endl;
 }
 
@@ -227,7 +230,7 @@ void SpeechManager::loadRecord() {
 
 	if (!ifs.is_open()) {
 		this->fileIsEmpty = true;
-		cout << "文件不存在！" << endl;
+		//cout << "文件不存在！" << endl;
 		ifs.close();
 		return;
 	}
@@ -235,7 +238,7 @@ void SpeechManager::loadRecord() {
 	char ch;
 	ifs >> ch;	//看是不是文件尾，读走一个字符
 	if (ifs.eof()) {
-		cout << "文件为空！" << endl;
+		//cout << "文件为空！" << endl;
 		this->fileIsEmpty = true;
 		ifs.close();
 		return;
