@@ -270,6 +270,18 @@ void SpeechManager::loadRecord() {
 	ifs.close();
 }
 
+//显示往届得分
+void SpeechManager::showRecord() {
+	for (int i = 0; i < this->m_Record.size(); i++) {
+		cout << "第" << i + 1 << "届" <<
+			"冠军编号：" << this->m_Record[i][0] << " 得分：" << this->m_Record[i][1] << " "
+			"亚军编号：" << this->m_Record[i][2] << " 得分：" << this->m_Record[i][3] << " "
+			"季军编号：" << this->m_Record[i][4] << " 得分：" << this->m_Record[i][5] << endl;
+	}
+	system("pause");
+	system("cls");
+}
+
 //退出功能
 void SpeechManager::exitSystem() {
 	cout << "欢迎下次使用" << endl;

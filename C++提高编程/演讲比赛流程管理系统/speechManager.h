@@ -44,6 +44,9 @@ public:
 	//读取记录
 	void loadRecord();
 
+	//显示往届得分
+	void showRecord();
+
 	//退出功能
 	void exitSystem();
 
