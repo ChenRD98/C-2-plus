@@ -84,6 +84,16 @@ void SpeechManager::startSpeech() {
 	//4、保存分数
 	this->saveRecord();
 
+	//重置比赛
+	//初始化属性
+	this->initSpeech();
+
+	//创建选手
+	this->createSpeaker();
+
+	//获取往届记录
+	this->loadRecord();
+
 	cout << "本届比赛完毕！" << endl;
 	system("pause");
 	system("cls");
