@@ -327,6 +327,8 @@ void SpeechManager::clearRecord() {
 
 		cout << "清空成功" << endl;
 	}
+	system("pause");
+	system("cls");
 }
 
 //退出功能
