@@ -122,3 +122,7 @@
  * 在speechManager.h中添加展示记录的成员函数 void showRecord();  
  * 在speechManager.cpp中实现成员函数 void showRecord();  
   
+### bug解决
+目前程序中有几处ubug未解决：
+ 1、查看往届记录，若文件不存在或为空，并未提示  
+解决方法：在showRecord函数中，开始判断文件状态并加以判断  

@@ -272,11 +272,16 @@ void SpeechManager::loadRecord() {
 
 //显示往届得分
 void SpeechManager::showRecord() {
-	for (int i = 0; i < this->m_Record.size(); i++) {
-		cout << "第" << i + 1 << "届" <<
-			"冠军编号：" << this->m_Record[i][0] << " 得分：" << this->m_Record[i][1] << " "
-			"亚军编号：" << this->m_Record[i][2] << " 得分：" << this->m_Record[i][3] << " "
-			"季军编号：" << this->m_Record[i][4] << " 得分：" << this->m_Record[i][5] << endl;
+	if (this->fileIsEmpty) {
+		cout << "文件不存在，或记录为空！" << endl;
+	}
+	else {
+		for (int i = 0; i < this->m_Record.size(); i++) {
+			cout << "第" << i + 1 << "届" <<
+				"冠军编号：" << this->m_Record[i][0] << " 得分：" << this->m_Record[i][1] << " "
+				"亚军编号：" << this->m_Record[i][2] << " 得分：" << this->m_Record[i][3] << " "
+				"季军编号：" << this->m_Record[i][4] << " 得分：" << this->m_Record[i][5] << endl;
+		}
 	}
 	system("pause");
 	system("cls");
