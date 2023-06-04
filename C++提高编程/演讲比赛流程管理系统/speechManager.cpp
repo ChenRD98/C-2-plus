@@ -302,6 +302,33 @@ void SpeechManager::showRecord() {
 	system("cls");
 }
 
+//清空记录
+void SpeechManager::clearRecord() {
+	cout << "确认清空？" << endl;
+	cout << "1、确认" << endl;
+	cout << "2、返回" << endl;
+
+	int select = 0;
+	cin >> select;
+
+	if (select == 1) {
+		//打开模式 ios::trunc 如果存在删除文件并重新创建
+		ofstream ofs("speech.csv", ios::trunc);
+		ofs.close();
+
+		//初始化属性
+		this->initSpeech();
+
+		//创建选手
+		this->createSpeaker();
+
+		//获取往届记录
+		this->loadRecord();
+
+		cout << "清空成功" << endl;
+	}
+}
+
 //退出功能
 void SpeechManager::exitSystem() {
 	cout << "欢迎下次使用" << endl;

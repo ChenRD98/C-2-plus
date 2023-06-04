@@ -47,6 +47,9 @@ public:
 	//显示往届得分
 	void showRecord();
 
+	//清空记录
+	void clearRecord();
+
 	//退出功能
 	void exitSystem();
 

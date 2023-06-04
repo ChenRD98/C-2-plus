@@ -36,6 +36,7 @@ int main() {
 
 		//清空记录
 		case 3:
+			sm.clearRecord();
 			break;
 
 		//退出系统

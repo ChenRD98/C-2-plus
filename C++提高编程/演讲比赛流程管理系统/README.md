@@ -134,3 +134,10 @@
 解决方法：initSpeech中添加 初始化记录容器  
  5、每次记录都是一样的  
 解决方法：在main函数一开始 添加随机数种子  
+  
+## 清空记录
+### 清空记录功能实现
+ * 在speechManager.h中添加保存记录的成员函数 void clearRecord();  
+ * 在speechManager.cpp中实现成员函数 void clearRecord();  
+ * 在main函数分支3选项中，调用清空比赛记录的接口  
+  
