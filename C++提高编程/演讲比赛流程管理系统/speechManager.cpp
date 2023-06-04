@@ -33,6 +33,8 @@ void SpeechManager::initSpeech() {
 	this->m_Speaker.clear();
 	//初始化比赛轮数
 	this->m_Index = 1;
+	//初始化记录容器
+	this->m_Record.clear();
 }
 
 //初始化创建12名选手
