@@ -22,6 +22,9 @@ int main() {
 			break;
 		case 0:
 			//退出
+			cout << "欢迎下一次使用" << endl;
+			system("pause");
+			return 0;
 			break;
 		default:
 			cout << "输入有误，请重新选择！" << endl;
