@@ -1,6 +1,57 @@
-#include<iostream>
 #include "showMenu.h"
-using namespace std;
+#include "globalFile.h"
+#include "identity.h"
+#include<fstream>
+#include<string>
+
+//登录功能
+void LoginIn(string fileName, int type) {
+	Identity* person = NULL;	//父类指针创建子类对象
+	ifstream ifs;
+	ifs.open(fileName, ios::in);
+
+	//文件不存在情况
+	if (!ifs.is_open()) {
+		cout << "文件不存在" << endl;
+		ifs.close();
+		return;
+	}
+	
+	int id = 0;
+	string name;
+	string pwd;
+
+	if (type == 1) {
+		//学生登陆
+		cout << "请输入你的学号" << endl;
+		cin >> id;
+	}
+	else if (type == 2) {
+		//教师登陆
+		cout << "请输入你的职工号" << endl;
+		cin >> id;
+	}
+	cout << "请输入用户名：" << endl;
+	cin >> name;
+	cout << "请输入密码：" << endl;
+	cin >> pwd;
+
+	if (type == 1) {
+		//学生登陆验证
+	}
+	else if (type == 2) {
+		//教师登陆验证
+	}
+	else if (type == 3) {
+		//管理员登陆验证
+	}
+
+	cout << "验证登陆失败！" << endl;
+
+	system("pause");
+	system("cls");
+	return;
+}
 
 int main() {
 
@@ -13,12 +64,15 @@ int main() {
 		switch (select) {
 		case 1:
 			//学生
+			LoginIn(STUDENT_FILE, 1);
 			break;
 		case 2:
 			//老师
+			LoginIn(TEACHER_FILE, 2);
 			break;
 		case 3:
 			//管理员
+			LoginIn(ADMIN_FILE, 3);
 			break;
 		case 0:
 			//退出
