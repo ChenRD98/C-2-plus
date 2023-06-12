@@ -7,7 +7,8 @@ Manager::Manager() {
 
 //有参构造
 Manager::Manager(string name, string pwd) {
-
+	this->m_Name = name;
+	this->m_Pwd = pwd;
 }
 
 //显示管理员操作菜单
