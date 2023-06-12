@@ -175,3 +175,5 @@ admin 123
  * 实现注销功能  
 添加全局函数 void managerMenu(Identity*& manager)  
   
+### 7.1.3 菜单功能实现
+ * 完善成员函数 void Manager::operMenu()的实现  
