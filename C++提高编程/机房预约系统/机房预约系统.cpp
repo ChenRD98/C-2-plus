@@ -3,6 +3,9 @@
 #include "identity.h"
 #include<fstream>
 #include<string>
+#include "student.h"
+#include "teacher.h"
+#include "manager.h"
 
 //登录功能
 void LoginIn(string fileName, int type) {
@@ -42,11 +45,13 @@ void LoginIn(string fileName, int type) {
 		string fName;
 		string fPwd;
 		while (ifs >> fId && ifs >> fName && ifs >> fPwd) {
+			//与用户输入的信息做对比
 			if (id == fId && name == fName && pwd == fPwd) {
 				cout << "学生验证登陆成功！" << endl;
 				system("pause");
 				system("cls");
 				person = new Student(id, name, pwd);
+				//进入学生身份的子菜单
 
 				return;
 			}
@@ -54,6 +59,19 @@ void LoginIn(string fileName, int type) {
 	}
 	else if (type == 2) {
 		//教师登陆验证
+		int fId;
+		string fName;
+		string fPwd;
+		while (ifs >> fId && ifs >> fName && ifs >> fPwd) {
+			if (fId == id && fName == name && fPwd == pwd) {
+				cout << "教师验证登陆成功！" << endl;
+				system("pause");
+				system("cls");
+				person = new Teacher(id, name, pwd);
+
+				return;
+			}
+		}
 	}
 	else if (type == 3) {
 		//管理员登陆验证
