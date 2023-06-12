@@ -12,7 +12,7 @@ void managerMenu(Identity*& manager) {
 	while (true) {
 		//管理员菜单
 		manager->operMenu();
-
+		//manger父类指针只能调用公共接口，所以需要强转回子类指针
 		Manager* man = (Manager*)manager;
 		int select = 0;
 		cin >> select;
