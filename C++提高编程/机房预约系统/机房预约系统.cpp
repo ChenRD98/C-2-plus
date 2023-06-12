@@ -7,6 +7,42 @@
 #include "teacher.h"
 #include "manager.h"
 
+//进入管理员子菜单界面
+void managerMenu(Identity*& manager) {
+	while (true) {
+		//管理员菜单
+		manager->operMenu();
+
+		Manager* man = (Manager*)manager;
+		int select = 0;
+		cin >> select;
+		if (select == 1) {
+			cout << "添加账号" << endl;
+			man->addPerson();
+		}
+		else if (select == 2) {
+			cout << "查看账号" << endl;
+			man->showPerson();
+		}
+		else if (select == 3) {
+			cout << "查看机房" << endl;
+			man->showComputer();
+		}
+		else if (select == 4) {
+			cout << "清空预约" << endl;
+			man->cleanFile();
+		}
+		else {
+			delete manager;
+			cout << "注销成功" << endl;
+			system("pause");
+			system("cls");
+			return;
+		}
+	}
+}
+
+
 //登录功能
 void LoginIn(string fileName, int type) {
 	Identity* person = NULL;	//父类指针创建子类对象
