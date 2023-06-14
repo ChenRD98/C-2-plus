@@ -8,7 +8,6 @@ using namespace std;
 #include "student.h"
 #include "teacher.h"
 
-
 class Manager :public Identity {
 public:
 	//默认构造
@@ -31,12 +30,12 @@ public:
 
 	//清空预约记录
 	void cleanFile();
-	
+
 	//初始化容器
 	void initVector();
 
 	//学生容器
-	vector<Student> vSut;
+	vector<Student> vStu;
 
 	//老师容器
 	vector<Teacher> vTea;
