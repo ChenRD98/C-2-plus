@@ -34,6 +34,9 @@ public:
 	//初始化容器
 	void initVector();
 
+	//检测重复 参数：（传入id，传入类型） 返回值：（true代表有重复）
+	bool checkRepeat(int id, int type);
+	
 	//学生容器
 	vector<Student> vStu;
 

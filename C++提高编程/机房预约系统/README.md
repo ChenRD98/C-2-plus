@@ -197,3 +197,6 @@ admin 123
   
 在Manager的有参构造函数中，获取目前的学生和教师信息，调用初始化容器函数  
   
+#### 7.2.2.2 去重函数封装
+在manager.h文件中添加成员函数 bool checkRepeat(int id, int type);  
+在manager.cpp文件中实现成员函数 bool checkRepeat(int id, int type);  

@@ -126,3 +126,22 @@ void Manager::initVector() {
 	cout << "当前老师数量为：" << vTea.size() << endl;
 	ifs.close();	//老师初始化
 }
+
+//检测重复 参数：（传入id，传入类型） 返回值：（true代表有重复）
+bool Manager::checkRepeat(int id, int type) {
+	if (type == 1) {
+		for (vector<Student>::iterator it = vStu.begin(); it != vStu.end(); it++) {
+			if (id == it->m_Id) {
+				return true;
+			}
+		}
+	}
+	else {
+		for (vector<Teacher>::iterator it = vTea.begin(); it != vTea.end(); it++) {
+			if (id == it->m_EmpId) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
