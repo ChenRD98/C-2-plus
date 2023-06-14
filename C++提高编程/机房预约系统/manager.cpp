@@ -88,3 +88,8 @@ void Manager::showComputer() {
 void Manager::cleanFile() {
 
 }
+
+//初始化容器
+void Manager::initVector() {
+
+}
