@@ -2,6 +2,8 @@
 #include<iostream>
 #include"identity.h"
 using namespace std;
+#include<fstream>
+#include "globalFile.h"
 
 class Manager :public Identity {
 public:
