@@ -200,3 +200,7 @@ admin 123
 #### 7.2.2.2 去重函数封装
 在manager.h文件中添加成员函数 bool checkRepeat(int id, int type);  
 在manager.cpp文件中实现成员函数 bool checkRepeat(int id, int type);  
+  
+#### 7.2.2.3 添加去重操作
+在添加学生编号或者教师职工号时，检测是否有重复  
+  
