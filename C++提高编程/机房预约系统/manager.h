@@ -7,6 +7,7 @@ using namespace std;
 #include<vector>
 #include "student.h"
 #include "teacher.h"
+#include<algorithm>
 
 class Manager :public Identity {
 public:

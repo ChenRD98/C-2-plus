@@ -88,16 +88,40 @@ void Manager::addPerson() {
 	cout << "添加成功" << endl;
 
 	this->initVector();
-	
+
 	system("pause");
 	system("cls");
 
 	ofs.close();
 }
 
+void printStudent(Student& s) {
+	cout << "学号：" << s.m_Id << " 姓名：" << s.m_Name << " 密码：" << s.m_Pwd << endl;
+}
+
+void printTeacher(Teacher& t) {
+	cout << "职工号：" << t.m_EmpId << " 姓名：" << t.m_Name << " 密码：" << t.m_Pwd << endl;
+}
+
 //查看账号
 void Manager::showPerson() {
+	cout << "请选择查看内容" << endl;
+	cout << "1、查看所有学生" << endl;
+	cout << "2、查看所有老师" << endl;
 
+	int select = 0;
+	cin >> select;
+
+	if (select == 1) {
+		cout << "所有学生信息如下：" << endl;
+		for_each(vStu.begin(), vStu.end(), printStudent);
+	}
+	else {
+		cout << "所有老师信息如下：" << endl;
+		for_each(vTea.begin(), vTea.end(), printTeacher);
+	}
+	system("pause");
+	system("cls");
 }
 
 //查看机房信息
