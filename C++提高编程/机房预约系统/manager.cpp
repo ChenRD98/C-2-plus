@@ -87,6 +87,8 @@ void Manager::addPerson() {
 	ofs << id << " " << name << " " << pwd << " " << endl;
 	cout << "添加成功" << endl;
 
+	this->initVector();
+	
 	system("pause");
 	system("cls");
 
