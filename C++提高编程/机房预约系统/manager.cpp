@@ -15,11 +15,11 @@ Manager::Manager(string name, string pwd) {
 	
 	//获取机房信息
 	ifstream ifs;
+	ifs.open(COMPUTER_FILE, ios::in);
 	if (!ifs.is_open()) {
 		cout << "文件读取失败" << endl;
 		return;
 	}
-	ifs.open(COMPUTER_FILE, ios::in);
 	ComputerRoom c;
 	while (ifs >> c.m_ComId && ifs >> c.m_MaxNum) {
 		vCom.push_back(c);
