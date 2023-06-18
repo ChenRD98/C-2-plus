@@ -140,7 +140,12 @@ void Manager::showPerson() {
 
 //查看机房信息
 void Manager::showComputer() {
-
+	cout << "机房信息如下：" << endl;
+	for (vector<ComputerRoom>::iterator it = vCom.begin(); it != vCom.end(); it++) {
+		cout << "机房编号：" << it->m_ComId << " 机房最大容量：" << it->m_MaxNum << endl;
+	}
+	system("pause");
+	system("cls");
 }
 
 //清空预约记录
