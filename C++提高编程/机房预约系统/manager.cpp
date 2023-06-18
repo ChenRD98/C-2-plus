@@ -12,6 +12,20 @@ Manager::Manager(string name, string pwd) {
 
 	//初始化容器
 	this->initVector();
+	
+	//获取机房信息
+	ifstream ifs;
+	if (!ifs.is_open()) {
+		cout << "文件读取失败" << endl;
+		return;
+	}
+	ifs.open(COMPUTER_FILE, ios::in);
+	ComputerRoom c;
+	while (ifs >> c.m_ComId && ifs >> c.m_MaxNum) {
+		vCom.push_back(c);
+	}
+	cout << "当前机房数量为：" << vCom.size() << endl;
+	ifs.close();
 }
 
 //显示管理员操作菜单
